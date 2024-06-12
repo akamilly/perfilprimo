@@ -1,4 +1,17 @@
+/*root= cores para a função noite*/
 :root, :root[data-treme='dark'] {
-    --primary-color: #f0f0f0;
-    --primary-bg-color: #111217;
+    --primary-color: #f0f0f0; /*cor principal dos textos*/
+    --primary-bg-color: #1d1e25; /*cor principal do fundo*/
+}
+
+
+/*light= cores para a função dia*/
+:root[data-theme='light'] {
+    --primary-color: #000; 
+    --primary-bg-color: #f0f2f5;
+}
+
+body {
+    background: var(--primary-bg-color); /*cor de fundo*/
+    color: var(--primary-color); /**cor geral dos textos/
 }
