@@ -1,3 +1,11 @@
+/* atalho para comentar: setinha para cima + alt + A */
+
+/* google fontes */
+
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 /*root= cores para a função noite*/
 :root, :root[data-treme='dark'] {
     --primary-color: #f0f0f0; /*cor principal dos textos*/
@@ -10,8 +18,7 @@
     --primary-color: #000; 
     --primary-bg-color: #f0f2f5;
 }
-
 body {
     background: var(--primary-bg-color); /*cor de fundo*/
-    color: var(--primary-color); /**cor geral dos textos/
+    color: var(--primary-color); /*cor geral dos textos*/
 }
