@@ -75,3 +75,24 @@ i {
     width: 3.25rem;
     height: 3.25rem; 
 }
+
+#toggletheme {
+    font-size: 1.5rem; /* tamanho da fonte  */
+    color: var(--icon-color);
+    cursor: pointer; /* cód para transformar o mouse em maozinha  */
+    transition: ease-in-out .4s; /* efeito de animação  */
+}
+
+.menu {
+    display: flex; /* (deixar a div como barra de pesquisa o 'home') torna o elemento flexivel, tornando uma caixa viavel para todos os tamanhos  */
+
+    align-items: center; /* alinhar e sentralizar a barra de pesquisa o 'home' 'projeto' etc */
+    background: var(--primary-bg-color); 
+    gap: 1rem; /* espaço entre os 'home' */
+} /* TODOS ESSES CÓDIGOS A CIMA, AJUDA PARA A BARRA DE NOTIFICAÇÃO */
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
