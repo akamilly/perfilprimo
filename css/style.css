@@ -89,10 +89,38 @@ i {
     align-items: center; /* alinhar e sentralizar a barra de pesquisa o 'home' 'projeto' etc */
     background: var(--primary-bg-color); 
     gap: 1rem; /* espaço entre os 'home' */
-} /* TODOS ESSES CÓDIGOS A CIMA, AJUDA PARA A BARRA DE NOTIFICAÇÃO */
+} /* TODOS ESSES CÓDIGOS A CIMA, AJUDA PARA A BARRA DE PEQUISA */
 
 .menu-link {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+.menu-mobile {
+    width: 100%;
+    position: fixed; 
+    /* BOTTOM, TOP, RIGHT, LEFT, só sera funcionado se tiver o position  */
+    bottom: 0;
+    justify-content: space-between; /* espaço para cada menu */
+    border-top: 3px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column; /* deixar os menu em colunas  */
+    justify-content: center;
+    padding: 0.5rem 1rem; /* tamanho sobre os menu  */ 
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-text
+
+.menu-icon, .menu-text {
+    color: var(--link-color);
+    font-weight: 500;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
 }
