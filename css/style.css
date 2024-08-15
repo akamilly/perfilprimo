@@ -27,6 +27,15 @@
 :root[data-theme='light'] {
     --primary-color: #000; 
     --primary-bg-color: #f0f2f5;
+    --secondary-by-color: #c7c8c9; /* cor do fundo */
+
+    --primary-border-color: #c7c8c9; /* cor primaria para borda */
+    --secondary-boder-color: #9a9a9c; /* cor secundaria para borda */
+
+    --title-color: #0b0b0f; /* cor de titulo */
+    --link-hover:  #a3a2a2; /* cor de texto */
+    --link-color: #0b0b0f; /* cor de link */
+    --icon-color: #56575a; 
 }
 
 /* reset css */
@@ -151,5 +160,5 @@ i {
 }
 
 .header-nav {
-    display: flex;
+    display: flex  ;
 }
