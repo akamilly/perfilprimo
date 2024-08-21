@@ -97,6 +97,10 @@ html[data-theme= 'light'] .logo {
     filter: invert(1);
 }
 
+html[data-theme= 'light'] .logo2 {
+    filter: invert(1);
+}
+
 #toggletheme {
     font-size: 1.5rem; /* tamanho da fonte  */
     color: var(--icon-color);
@@ -165,12 +169,11 @@ html[data-theme= 'light'] .logo {
         border-bottom: 1px solid var(--primary-border-color);
         padding: 1rem 6rem;
     }
-}
-
-.nav-mobile {
-    display: none;
-}
-
-.header-nav {
-    display: flex  ;
-}
+    .nav-mobile {
+        display: none;
+    }
+    
+    .header-nav {
+        display: flex  ;
+    }
+}  
