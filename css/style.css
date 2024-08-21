@@ -82,7 +82,19 @@ i {
 
 .header-logo .logo{
     width: 3.25rem;
-    height: 3.25rem; 
+    height: 3.25rem;
+}
+
+.header-logo .logo2{
+    width: 7rem;
+    height: 2rem;
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+html[data-theme= 'light'] .logo {
+    filter: invert(1);
 }
 
 #toggletheme {
