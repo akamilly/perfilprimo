@@ -163,6 +163,44 @@ html[data-theme= 'light'] .logo2 {
     gap: 1rem;
 }
 
+.menu-social{
+    gap: 1rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--icon-color);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    transition: ease-in-out .3s;
+}
+
+.btn-primary{
+    border: 1px solid var(--secondary-boder-color);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span,
+.btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn-primary span{
+    color: var(--primary-color);
+}
+
 @media (min-width: 768px) {
     .header {
         position: fixed;
