@@ -201,6 +201,30 @@ html[data-theme= 'light'] .logo2 {
     color: var(--primary-color);
 }
 
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+/* proporção de tamanhos para video: 16/9 , 4/3 , 21/9. */
+
+#home, .projetos, .sobre, .contato{
+    padding: 7rem 5rem;
+}
+
+
+
 @media (min-width: 768px) {
     .header {
         position: fixed;
