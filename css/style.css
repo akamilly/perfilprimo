@@ -1,63 +1,59 @@
-/* atalho para comentar: setinha para cima + alt + A */
+/*  Google Fonts */  /* Atalho para Comentar Shift + ALT + A  */
 
-/* google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* Variaveis das Cores */
+/* TEMA DARK */
+:root, :root[data-theme='dark'] {
+    --primary-color: #f0f0f0;  /*cor principal Textos*/
+    --primary-bg-color: #171111;  /*cor principal Fundo*/ 
+    /* bg = background == cor do Fundo */
+    --secondary-bg-color: #28292E;  
+    --primary-border-color: #28292E;
+    --secondary-border-color: #c1c2c4;
+    --title-color: #F0F0F0;
+    
+    --link-color: #8f8f8f;
+    --link-hover: #F0F0F0;
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-
-/*root= cores para a função noite*/
-:root, :root[data-treme='dark'] {
-    --primary-color: #f0f0f0; /*cor principal dos textos*/
-
-    --primary-bg-color: #1d1e25; /*cor principal do fundo*/
-    --secondary-by-color: #28292E; /* cor do fundo */
-
-    --primary-border-color: #28292E; /* cor primaria para borda */
-    --secondary-boder-color: #56575A; /* cor secundaria para borda */
-
-    --title-color: #f0f0f0; /* cor de titulo */
-    --link-hover:  #f0f0f0; /* cor de texto */
-    --link-color: #8f8f8f; /* cor de link */
-    --icon-color: #c7c8c9; 
+    --icon-color: #C7C8C9;
 }
-
-
-/*light= cores para a função dia*/
+/* TEMA LIGHT */
 :root[data-theme='light'] {
-    --primary-color: #000; 
+    --primary-color: #0d0c09; /* cor principal textos */
+
     --primary-bg-color: #f0f2f5;
-    --secondary-by-color: #c7c8c9; /* cor do fundo */
+    --secondary-bg-color: #C7C8C9;
 
-    --primary-border-color: #c7c8c9; /* cor primaria para borda */
-    --secondary-boder-color: #9a9a9c; /* cor secundaria para borda */
+    --primary-border-color: #C7C8C9;
+	--secondary-border-color: #9A9A9C;
 
-    --title-color: #0b0b0f; /* cor de titulo */
-    --link-hover:  #a3a2a2; /* cor de texto */
-    --link-color: #0b0b0f; /* cor de link */
-    --icon-color: #56575a; 
+	--title-color: #0B0B0F;
+	--link-hover: #a3a2a2;
+	--link-color: #0B0B0F;
+	--icon-color: #56575A;
 }
 
-/* reset css */
+/* Reset CSS */
 * {
-    margin: 0;
+    margin: 0; /*margem */
     padding: 0; /* preenchimento */
-    box-sizing: border-box; /* direcionamento das caixas  */
-    vertical-align: baseline; /* alinhamento vertical */
-    list-style: none; /* estilo de lista ou remover bolinhas */
-    scrollbar-width: thin; /* afinar barra de rolagem */
-    scrollbar-width: var(--secondary-boder-color) transparent; /* colocar cor na barra de rolagem  */
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
 }
 
 body {
-    background: var(--primary-bg-color); /*cor de fundo*/
-    color: var(--primary-color); /*cor geral dos textos*/
-    font-family: 'playwhite' , Verdana, Geneva, Tahoma, sans-serif; 
+    background: var(--primary-bg-color); /*cor fundo*/
+    color: var(--primary-color);  /*cor geral dos textos*/
+    font-family: 'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    text-decoration: none; /* tirar o link das palavras  */
-    color: var(--link-color); /* mudar a cor das janelas  */
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 a:hover {
@@ -65,56 +61,56 @@ a:hover {
 }
 
 i {
-    color: var(--icon-color);
+   color: var(--icon-color); 
 }
 
 .header {
     display: flex;
-    flex-flow: row wrap; /* coloca o conteudo em linha e permite a quebra de linha  */
-    justify-content: space-between; /* os itens dentro do container flexivel serao distribuidos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
-
-    align-items: center; /* alinhar os itens, seja levados as informaçoes/fotos, em uma direção sendo a direita, esquerda ou meio.*/
-
+    flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
+    align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
-    z-index: 2; /* sobreposição/profundidade  */
+    z-index: 2;/*sobreposição*/
 }
-
+   
 .header-logo .logo{
     width: 3.25rem;
     height: 3.25rem;
 }
 
-.header-logo .logo2{
-    width: 7rem;
+.header-logo .logo2 {
+    width: 15rem;
     height: 2rem;
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
 }
 
-html[data-theme= 'light'] .logo {
+html[data-theme='light'] .logo {
     filter: invert(1);
-}
+} 
 
-html[data-theme= 'light'] .logo2 {
+html[data-theme='light'] .logo2 {
     filter: invert(1);
-}
+} 
 
-#toggletheme {
-    font-size: 1.5rem; /* tamanho da fonte  */
+#toggleTheme {
+    font-size: 1.5rem; 
     color: var(--icon-color);
-    cursor: pointer; /* cód para transformar o mouse em maozinha  */
-    transition: ease-in-out .4s; /* efeito de animação  */
+    cursor: pointer;
+    transition: ease-in-out .4s;
 }
 
 .menu {
-    display: flex; /* (deixar a div como barra de pesquisa o 'home') torna o elemento flexivel, tornando uma caixa viavel para todos os tamanhos  */
-
-    align-items: center; /* alinhar e sentralizar a barra de pesquisa o 'home' 'projeto' etc */
-    background: var(--primary-bg-color); 
-    gap: 1rem; /* espaço entre os 'home' */
-} /* TODOS ESSES CÓDIGOS A CIMA, AJUDA PARA A BARRA DE PEQUISA */
+    display: flex;
+    /* Torna o Elemento um Flex container automaticamente transformando todos os filhos diretos em Flex Itens  */
+    align-items: center;
+    background: var(--primary-bg-color);
+    gap: 1rem;
+} 
 
 .menu-link {
     display: flex;
@@ -122,28 +118,30 @@ html[data-theme= 'light'] .logo2 {
     gap: .5rem;
 }
 
-.menu-mobile {
+.menu-mobile {   /* UL */
     width: 100%;
-    position: fixed; 
-    /* BOTTOM, TOP, RIGHT, LEFT, só sera funcionado se tiver o position  */
+    position: fixed;
     bottom: 0;
-    justify-content: space-between; /* espaço para cada menu */
-    border-top: 3px solid var(--primary-border-color);
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
 }
 
 .menu-mobile .menu-link {
-    flex-direction: column; /* deixar os menu em colunas  */
+    flex-direction: column;
     justify-content: center;
-    padding: 0.5rem 1rem; /* tamanho sobre os menu  */ 
+    padding: .5rem 1rem;
 }
 
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text,
-.menu-link:hover .menu-text
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--link-hover);
+}
 
 .menu-icon, .menu-text {
     color: var(--link-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .menu-icon {
@@ -151,23 +149,23 @@ html[data-theme= 'light'] .logo2 {
 }
 
 .menu-text {
-    font-size: 0.75rem;
-    text-transform: capitalize; /* deixar o menu com o começo maiusculo, ex: entre 'home' ficaria 'Home' */
+    font-size: .75rem;
+    text-transform: uppercase;
 }
 
 .header-nav {
     display: none;
 }
 
-.menu-pricipal {
+.menu-principal {
     gap: 1rem;
 }
 
-.menu-social{
-    gap: 1rem;
+.menu-social {
+   gap: 1rem; 
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,39 +173,36 @@ html[data-theme= 'light'] .logo2 {
     width: 100%;
     background: transparent;
     border-radius: 3rem;
-    color: var(--icon-color);
+    color: var(--primary-color);
     border: none;
     cursor: pointer;
     padding: 0.5rem 1.5rem;
     transition: ease-in-out .3s;
 }
 
-.btn-primary{
-    border: 1px solid var(--secondary-boder-color);
+.btn-primary {
+    border: 1px solid var(--secondary-border-color);
 }
 
-.btn:hover{
-    transform: scale(1.05);
-    transition: ease-in-out .3s;
+.btn:hover {
+    transform: scale(1.07);
+    transition: ease-in-out 0.5s;
 }
 
 .btn span,
-.btn i{
+.btn i {
     font-size: 1.25rem;
     text-transform: uppercase;
 }
-
-.btn-primary span{
+.btn-primary span {
     color: var(--primary-color);
 }
-
-#home{
+#home {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
-.main-content{
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -217,37 +212,43 @@ html[data-theme= 'light'] .logo2 {
     width: 100%;
     aspect-ratio: 16/9;
 }
-/* proporção de tamanhos para video: 16/9 , 4/3 , 21/9. */
 
-#home, .projetos, .sobre, .contato{
+#home, .projetos, .sobre, .contato {
     padding: 5rem 5rem;
 }
 
-.projetos{
+.projetos {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
-.projetos-container{
+.projetos-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem; 
+    gap: 4rem;
 }
+
 .projeto-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.card-cover{ /* codido para mexer nas img */
+.card-cover {
     width: 100%;
     border-radius: 2rem;
     object-fit: cover;
     object-position: center;
 }
 
-.card-body{
+.card-cover3 {
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -255,60 +256,66 @@ html[data-theme= 'light'] .logo2 {
     gap: 1rem;
 }
 
-.card-tittle{
+.card-title {
     font-size: 2rem;
     color: var(--title-color);
     font-weight: 400;
-    font-family: 'poppins';
+    font-family: 'Poppins';
 }
 
-.card-description{
+.card-description {
     color: var(--primary-color);
+    /* font-size: ; */
     text-align: justify;
 }
 
-.card-lista{
+.card-lista {
     margin-left: 2rem;
 }
 
-.card-item{
+.card-item {
     list-style: circle;
     margin: 0.25rem;
 }
 
-.card-button, .card-description{
+.card-button, .card-description {
     display: flex;
-    flex-flow: row wrap; /* manter o conteudo, manter em linha */
+    flex-flow: row wrap;
     justify-content: center;
 }
 
-.card-button .btn{
-    padding: 0.65rem 1.25rem;
+.card-button .btn {
+    padding: .65rem 1.25rem;
 }
 
-.card-button .btn span{
+.card-button .btn span {
     font-size: 1rem;
 }
 
 
-@media (min-width: 768px) {
+
+
+/* =====  --------------------- ======= */
+
+/* CSS Responsivo */
+@media (min-width: 768px)  {
     .header {
         position: fixed;
-        border-bottom: 1px solid var(--primary-border-color);
+        border-bottom: 3px solid var(--primary-border-color);
         padding: 1rem 6rem;
     }
     .nav-mobile {
         display: none;
     }
-    
     .header-nav {
-        display: flex  ;
+        display: flex;
     }
-    .header-nav, .header-toggle {
+    .header-nav, 
+    .header-toggle {
         min-width: 30%;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     h2 {
         font-size: 3rem;
@@ -324,15 +331,37 @@ html[data-theme= 'light'] .logo2 {
     .contato {
         padding: 6rem;
     }
-    .contato p{
+    .contato p {
         width: 80%;
     }
     footer {
         margin: 0;
     }
 }  
+/* -------- fim resolução 768 */
+
+/* sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-content1, .sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sobre-perfil { /* imagem */ 
+    width: 100%;
+    border-radius: 50rem;
+    border: 8px solid var(--link-color); /* cor da borda */
+}
+
 @media (min-width: 992px) {
-    .projetos-card {
+    .projeto-card {
         flex-direction: row;
     }
     .card-reverse {
@@ -342,4 +371,48 @@ html[data-theme= 'light'] .logo2 {
     .card-cover {
         width: 55%;
     }
-} 
+    .card-cover3 {
+        width: 35%;
+    }
+    
+    .sobre {
+        gap: 5rem;
+    }
+    .sobre-content1, .sobre-content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    #home {
+        padding: 10rem 6rem 2rem;
+    }
+    p, span, li {
+        font-size: 1.15rem;
+    }
+    .card-button .btn, .descricao-button .btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 6.25rem;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    h3 {
+        font-size: 3.25rem;
+    }
+}
